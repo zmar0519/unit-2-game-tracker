@@ -7,6 +7,7 @@ export {
 const profileSchema = new mongoose.Schema({
   name: String,
   avatar: String,
+  game: [completedGameSchema]
 }, {
   timestamps: true
 })

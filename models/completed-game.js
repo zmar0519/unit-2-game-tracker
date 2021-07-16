@@ -1,10 +1,10 @@
 import mongoose from 'mongoose'
 
 export {
-game
+completedGame
 }
 
-const gameSchema = new mongoose.Schema({
+const completedGameSchema = new mongoose.Schema({
     name: String,
     avatar: String,
     releaseDate: Date,
@@ -14,4 +14,4 @@ const gameSchema = new mongoose.Schema({
     timestamps: true
   })
   
-  const game = mongoose.model('game', gameSchema)
+  const completedGame = mongoose.model('completedGame', completedGameSchema)
