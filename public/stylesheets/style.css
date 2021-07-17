@@ -30,6 +30,8 @@ nav {
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
+  
 }
 
 main {
@@ -41,4 +43,6 @@ main {
 
 h1 {
   font-size: 3.6rem;
+  font-family: 'Odibee Sans', cursive;
+  text-align: center;
 }
