@@ -1,2 +1,24 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
+
+<section>
+    <h1>Games!</h1>
+    <% if (user) { %>
+        <h2>Add a Game!</h2>
+        <form action="/games" method="POST">
+          <label>
+            Name: 
+            <input type="text" name="name" autocomplete="off">
+          </label>
+          <button type="submit">Add Game</button>
+        </form>
+      <% } %>
+    <h2>See all games below:</h2>
+      <ul>
+      <li></li>
+    </ul>
+  </section>
+  
+
+
+  <%- include('../partials/footer') %>

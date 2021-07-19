@@ -1,7 +1,18 @@
 import { Game } from '../models/profile.js'
 
 export {
-  index
+  index,
+  create
+}
+
+function create(req, res) {
+  Game.create(req.body)
+  .then(game => {
+    res.redirect('/games')
+  })
+  .catch(err => {
+    res.redirect('/games')
+  } )
 }
 
 function index(req, res) {
