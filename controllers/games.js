@@ -1,8 +1,13 @@
-import { Game } from '../models/profile.js'
+import { Game } from '../models/game.js'
 
 export {
   index,
-  create
+  create,
+  show,
+}
+
+function show(req,res) {
+  Game.findById(req.params.id)
 }
 
 function create(req, res) {
@@ -12,19 +17,18 @@ function create(req, res) {
   })
   .catch(err => {
     res.redirect('/games')
-  } )
+  })
 }
 
 function index(req, res) {
   Game.find({})
   .then(games => {
     res.render("games/index", {
-      game,
-      title,
+      games,
+      title: 'All Games',
     })
+})
     .catch(err => {
-      console.log(err)
-      res.redirect('/games')
-    })
+    res.redirect('/games')
   })
 }

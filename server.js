@@ -7,7 +7,7 @@ import session from 'express-session'
 import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
-import { router as gamesRouter} from './routes/profiles.js'
+import { router as gamesRouter} from './routes/games.js'
 import { passUserToView } from './middleware/middleware.js'
 
 // create the express app
@@ -61,9 +61,9 @@ app.use(passport.session())
 app.use(passUserToView)
 
 // router middleware
+app.use('/games', gamesRouter)
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
-app.use('/games', gamesRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

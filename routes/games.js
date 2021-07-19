@@ -8,5 +8,6 @@ export {
 
 const router = Router()
 
-router.get('/', gamesCtrl.index)
 router.post('/', isLoggedIn, gamesCtrl.create)
+router.get('/', gamesCtrl.index)
+router.get('/:id', gamesCtrl.show)
