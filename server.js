@@ -8,6 +8,7 @@ import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
 import { router as gamesRouter} from './routes/profiles.js'
+import { passUserToView } from './middleware/middleware.js'
 
 // create the express app
 const app = express()
@@ -55,6 +56,9 @@ app.use(
 // passport middleware
 app.use(passport.initialize())
 app.use(passport.session())
+
+// custom middleware
+app.use(passUserToView)
 
 // router middleware
 app.use('/', indexRouter)
