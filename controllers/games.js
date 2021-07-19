@@ -1,9 +1,19 @@
-import { game } from '../models/profile.js'
+import { Game } from '../models/profile.js'
 
 export {
   index
 }
 
 function index(req, res) {
-  console.log("game")
+  Game.find({})
+  .then(games => {
+    res.render("games/index", {
+      game,
+      title,
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/games')
+    })
+  })
 }

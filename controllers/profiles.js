@@ -7,7 +7,7 @@ export {
 function index(req, res) {
   Profile.find({})
   .then(profiles => {
-    res.render("profiles/index", {
+    res.render("games/index", { // LOOKAT ME
       profiles,
       title: "Compare with friends!"
   })
