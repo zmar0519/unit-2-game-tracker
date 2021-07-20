@@ -1,0 +1,47 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Edit the Game</h1>
+  <form action="/games/<%= game._id %>?_method=PUT" method="POST">
+    <label>
+      Name: 
+      <input 
+        type="text"
+        name="name" 
+        value="<%= game.name %>" 
+        autocomplete="off"
+      >
+    </label>
+    <label>Release Year:
+    <input type="number" name="releaseDate" autocomplete="off">
+    </label>
+    <label>Genre:
+        <select name="genre">
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="Shooter">Shooter</option>
+            <option value="RPG">RPG</option>
+            <option value="Horror">Horror</option>
+            <option value="Fighting">Fighting</option>
+        </select>
+    </label><br>
+    <label>Rating:
+        <select name="rating">
+            <option value="E">E</option>
+            <option value="E10">E10</option>
+            <option value="T">T</option>
+            <option value="M">M</option>            
+        </select>
+    </label>
+    <button type="submit">Edit Game</button>
+
+  </form>
+</section>
+
+<%- include('../partials/footer') %>
+
+name: String,
+    releaseDate: Date,
+    genre: String,
+    rating: String,

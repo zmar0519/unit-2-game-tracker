@@ -15,7 +15,6 @@ function edit(req, res) {
 			title: 'Edit Game'
 		})
 	})
-	res.redirect('/games')
 }
 
 function show(req, res) {
