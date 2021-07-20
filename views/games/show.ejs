@@ -1,0 +1,14 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h2>Game:<%= game.name %></h1>
+  <h2>Released: <%= game.releaseDate.getFullYear() %> </h2>
+  <h2>Genre: <%= game.genre %> </h2>
+  <h2>Rating: <%= game.rating %> </h2>
+
+  <a class="link" href="/games/<%= game._id %>/edit">Edit this Game!</a>
+
+</section>
+
+<%- include('../partials/footer') %>

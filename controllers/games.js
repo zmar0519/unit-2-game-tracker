@@ -4,13 +4,26 @@ export {
   index,
   create,
   show,
+  edit,
 }
 
-function show(req,res) {
+function edit(req, res) {
+  Game.findById(req.params.id)
+	.then(game => {
+		res.render('games/edit', {
+			game,
+			title: 'Edit Game'
+		})
+	})
+	res.redirect('/games')
+}
+
+function show(req, res) {
   Game.findById(req.params.id)
   .then(function (game){
     res.render('games/show', {
-      game
+      game,
+      title: 'Show Game',
     })
   })
 }
