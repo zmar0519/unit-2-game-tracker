@@ -8,6 +8,11 @@ export {
 
 function show(req,res) {
   Game.findById(req.params.id)
+  .then(function (game){
+    res.render('games/show', {
+      game
+    })
+  })
 }
 
 function create(req, res) {
