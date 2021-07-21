@@ -43,3 +43,16 @@ h1 {
   font-family: 'Odibee Sans', cursive;
   text-align: center;
 }
+
+h2 {
+  font-size: 25px;
+}
+
+a {
+  font-size: 18px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
