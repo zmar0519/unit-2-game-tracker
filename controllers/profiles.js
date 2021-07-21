@@ -1,12 +1,27 @@
+import { Game } from "../models/game.js"
 import { Profile } from "../models/profile.js"
 
 export {
   index,
   show,
+  gameAdd,
+}
+
+function gameAdd(req, res) {
+  let currentDate = new Date()
+  const gameBeaten = {date: currentDate.toDateString(), game: req.params.gameId}
+  Profile.findById(req.user.profile._id)
+  .then((profile) => {
+    profile.gamesBeaten.push(gameBeaten)
+    profile.save(err => {
+      res.redirect(`/games/${req.params.gameId}`)
+    })
+  })
 }
 
 function show(req, res) {
   Profile.findById(req.params.id)
+  .populate({path: 'gamesBeaten', populate: {path: 'game'}})
   .then((profile) => {
     Profile.findById(req.user.profile._id)
     .then(self => {
