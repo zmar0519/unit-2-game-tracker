@@ -9,6 +9,14 @@
 
   <a class="link" href="/games/<%= game._id %>/edit">Edit this Game!</a>
 
+  <p> 
+		<form action="/games/<%= game._id %>?_method=DELETE" method="post">
+      <button type="submit">
+        Delete this game.
+      </button>
+    </form>
+    </p>
+
 </section>
 
 <%- include('../partials/footer') %>

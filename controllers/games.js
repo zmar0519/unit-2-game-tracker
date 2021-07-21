@@ -5,6 +5,21 @@ export {
   create,
   show,
   edit,
+  deleteGame as delete,
+}
+
+function deleteGame(req, res){
+  Game.findById(req.params.id)
+  .then(game => {
+    if (game.owner.equals(req.user.profile._id)) {
+      game.delete()
+      .then(() => {
+        res.redirect('/games')
+      })
+    } else {
+      throw new Error ('You cannot delete games you did not create!')
+    }
+  })
 }
 
 function edit(req, res) {
