@@ -9,6 +9,7 @@ const gameSchema = new mongoose.Schema({
     releaseDate: Date,
     genre: String,
     rating: String,
+    owner: {type: mongoose.Schema.Types.ObjectId, 'ref': "Profile"}
   }, {
     timestamps: true
   })

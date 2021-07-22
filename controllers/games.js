@@ -43,6 +43,7 @@ function show(req, res) {
 }
 
 function create(req, res) {
+  req.body.owner = req.user.profile
   Game.create(req.body)
   .then(game => {
     res.redirect('/games')

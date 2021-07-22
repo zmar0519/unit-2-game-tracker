@@ -87,3 +87,8 @@ select:focus {
 nav a {
   margin-left: 15px;
 }
+
+section {
+  text-align: center;
+  padding: 3rem;
+}
