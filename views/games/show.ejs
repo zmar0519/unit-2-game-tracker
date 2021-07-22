@@ -6,22 +6,17 @@
   <h2>Released: <%= game.releaseDate.getFullYear() %> </h2>
   <h2>Genre: <%= game.genre %> </h2>
   <h2>Rating: <%= game.rating %> </h2>
-
   <a class="link" href="/games/<%= game._id %>/edit">Edit this Game!</a>
-
   <p> 
     <% if (game.owner.equals(user?.profile._id)) { %>
 		<form action="/games/<%= game._id %>?_method=DELETE" method="post">
-      <button type="submit">Delete this game</button>
-      
+      <button type="submit">Delete this game</button> 
     </form>
     <% } %>
     </p>
     <form action="/profiles/games/<%= game._id %>?_method=PUT" method="POST">
       <button type="submit">Add to my beaten games!</button>
-
     </form>
-
 </section>
 
 <%- include('../partials/footer') %>

@@ -6,6 +6,19 @@ export {
   show,
   edit,
   deleteGame as delete,
+  update,
+}
+
+function update(req, res){
+  Game.findById(req.params.id)
+  .then(game => {
+    if (game.owner.equals(req.user.profile._id)) {
+      game.update(req.body, {new: true})
+      .then(()=> {
+        res.redirect(`/games/${game._id}`)
+    })
+  } 
+})
 }
 
 function deleteGame(req, res){
