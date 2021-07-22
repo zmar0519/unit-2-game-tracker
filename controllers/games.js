@@ -57,6 +57,7 @@ function show(req, res) {
 }
 
 function create(req, res) {
+  console.log('req.body', req.body)
   req.body.owner = req.user.profile
   Game.create(req.body)
   .then(game => {

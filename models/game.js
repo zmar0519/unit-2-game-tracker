@@ -6,7 +6,7 @@ export {
 
 const gameSchema = new mongoose.Schema({
     name: String,
-    releaseDate: Date,
+    releaseDate: String,
     genre: String,
     rating: String,
     owner: {type: mongoose.Schema.Types.ObjectId, 'ref': "Profile"}
