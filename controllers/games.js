@@ -34,6 +34,7 @@ function edit(req, res) {
 
 function show(req, res) {
   Game.findById(req.params.id)
+  .populate('owner')
   .then(function (game){
     res.render('games/show', {
       game,
