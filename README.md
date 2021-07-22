@@ -10,11 +10,9 @@ Video games have been capturing the minds and imaginations of millions of people
 The Completionist allows you to keep track of all the video games that you have beaten as well as see the games that your friends have completed. Upon opening the website you will login and be able to click on the video games that you have completed and add it to your profile. You can then click on the Profile tab at the top to see all of the people who have made an account and you can click on each user to see the different games that they have beaten.
 
 # Project Overview
-Thank you for checking out my Unit 1 Project. This is a culmination of my skills from the past three weeks of learning JavaScript, HTML, CSS, Dev Tools, and version control. This project is part of my journey through the General Assembly SEI program.
+Thank you for checking out my Unit 2 Project. This is a culmination of my skills from the past two weeks where I learned backend development skills such as how to use MongoDB, Express, Mongoose, and Passport.
 
-This game is a classic example of a quiz/trivia game demonstrating what I have learned over the past several weeks.
-
-This game specifically uses the following technology:
+This application specifically uses the following technology:
 * HTML
 * EJS
 * CSS
@@ -25,6 +23,7 @@ This game specifically uses the following technology:
 * Mongoose
 * Express
 * Passport
+* Google OAuth
 
 ## Screenshots
 ### Wireframe ![Wireframe of the app](https://i.imgur.com/leXiUIO.png)
@@ -33,6 +32,7 @@ This game specifically uses the following technology:
 ### Main Question Answering Screen ![Main Screen of the Quiz Mania App](https://i.imgur.com/NVJcj8X.png)
 ### Final End Screen ![Final End Screen after all questions have been answered](https://i.imgur.com/DaGV7pr.png)
 ### Dark Mode ![A dark mode for those night owls playing quiz late into the night](https://i.imgur.com/l1hB1xQ.png)
+### ERD Data Structure
 
 ## Icebox (Next Steps):
 * Ability to pull in data from an API.
