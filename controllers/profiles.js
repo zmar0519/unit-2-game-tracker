@@ -21,7 +21,7 @@ function gameAdd(req, res) {
 
 function show(req, res) {
   Profile.findById(req.params.id)
-  .populate({path: 'gamesBeaten', populate: {path: 'game'}})
+  .populate({path: 'gamesBeaten', populate: {path: 'game', model: "Game"}})
   .then((profile) => {
     Profile.findById(req.user.profile._id)
     .then(self => {

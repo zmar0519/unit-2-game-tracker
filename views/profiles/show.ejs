@@ -15,7 +15,7 @@
   <h2>Games beaten:</h2>
   <% profile.gamesBeaten.forEach(game => { %>
     <div>
-        <%= game.game.name %>
+        <%= game.game?.name %>
     </div>
   <% }) %>
 </main>
