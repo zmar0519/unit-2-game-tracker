@@ -1,72 +1,40 @@
-# MEN Stack with OAuth Template
+# The Completionist
+## Created by Zachary Martin
+Find the game available [here](https://the-completionist.herokuapp.com/)
 
-This is a MEN Stack template that includes OAuth.
+## Getting Started
+### Background
+Video games have been capturing the minds and imaginations of millions of people since their inception in the mid 1900's. Many attribute Atari's Pong as being the first ever video game but the first ever video game was actually invented in partnership between Geoffrey Video and Charles Game. Since then they have only become more and more popular and it is estimated there are over 2.5 billion people who play video games regularly.
 
-Use this to go build things! 🚀
+### Instructions
+The Completionist allows you to keep track of all the video games that you have beaten as well as see the games that your friends have completed. Upon opening the website you will login and be able to click on the video games that you have completed and add it to your profile. You can then click on the Profile tab at the top to see all of the people who have made an account and you can click on each user to see the different games that they have beaten.
 
-## To Use This Template
+# Project Overview
+Thank you for checking out my Unit 1 Project. This is a culmination of my skills from the past three weeks of learning JavaScript, HTML, CSS, Dev Tools, and version control. This project is part of my journey through the General Assembly SEI program.
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+This game is a classic example of a quiz/trivia game demonstrating what I have learned over the past several weeks.
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+This game specifically uses the following technology:
+* HTML
+* EJS
+* CSS
+* JavaScript
+* Bootstrap
+* Git
+* MongoDB
+* Mongoose
+* Express
+* Passport
 
-Once you are in the project directory:
+## Screenshots
+### Wireframe ![Wireframe of the app](https://i.imgur.com/leXiUIO.png)
 
-```bash
-rm -rf .git
-```
+### Main Screen ![Main Screen of the Quiz Mania App](https://i.imgur.com/LpsyGYf.png)
+### Main Question Answering Screen ![Main Screen of the Quiz Mania App](https://i.imgur.com/NVJcj8X.png)
+### Final End Screen ![Final End Screen after all questions have been answered](https://i.imgur.com/DaGV7pr.png)
+### Dark Mode ![A dark mode for those night owls playing quiz late into the night](https://i.imgur.com/l1hB1xQ.png)
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
-
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
-
-Re-initialize a git repository:
-
-```bash
-git init
-```
-
-Use the GitHub CLI to create a new project repository on GitHub:
-
-```bash
-gh repo create <name-of-your-app-here>
-```
-
-Run npm i to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-Then, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CALLBACK=https://localhost:3000/auth/google/oauth2callback
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this README.md
-
-You're done!
+## Icebox (Next Steps):
+* Ability to pull in data from an API.
+* Ability to search said API for games.
+* A review section attached to the games.
