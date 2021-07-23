@@ -34,7 +34,7 @@ This application specifically uses the following technology:
 
 ## ERD
 Check out the app's ERD below:
-(https://i.imgur.com/z1ukRwS.png)
+![Application's ERD](https://i.imgur.com/z1ukRwS.png)
 
 ## Icebox (Next Steps):
 * Ability to pull in data from an API.
