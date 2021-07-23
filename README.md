@@ -18,6 +18,7 @@ This application specifically uses the following technology:
 * CSS
 * JavaScript
 * Bootstrap
+* Milligram
 * Git
 * MongoDB
 * Mongoose
@@ -40,3 +41,6 @@ Check out the app's ERD below:
 * Ability to pull in data from an API.
 * Ability to search said API for games.
 * A review section attached to the games.
+
+### Credits
+Thanks to Milligram.io for their frontend CSS Framework.
