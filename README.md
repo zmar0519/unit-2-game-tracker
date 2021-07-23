@@ -28,8 +28,8 @@ This application specifically uses the following technology:
 ## Screenshots
 | Wireframes      | Actual App |
 | ----------- | ----------- |
-| (https://i.imgur.com/ZcydBdT.png)     | (https://i.imgur.com/2WnxgMc.png)       |
-| (https://i.imgur.com/B4VJ3jm.png)   | (https://i.imgur.com/ITFy94P.png)        |
+| ![Homepage Wireframe](https://i.imgur.com/ZcydBdT.png)     | ![Actual App Homepage](https://i.imgur.com/2WnxgMc.png)       |
+| ![Profile Wireframe](https://i.imgur.com/B4VJ3jm.png)   | ![Actual App Profile Page](https://i.imgur.com/ITFy94P.png)        |
 
 
 ## ERD
