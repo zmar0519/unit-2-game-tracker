@@ -1,6 +1,6 @@
 # The Completionist
 ## Created by Zachary Martin
-Find the game available [here](https://the-completionist.herokuapp.com/)
+Find the app available [here](https://the-completionist.herokuapp.com/)
 
 ## Getting Started
 ### Background
